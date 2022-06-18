@@ -1,1 +1,186 @@
-@import  "base";
+@import "base";
+@import "navbar";
+
+
+/* Navbar Styles */
+
+nav {
+    margin: 0.8rem 1.6rem;
+    font-family: "Archivo", sans-serif;
+    font-size: 0.9rem;
+}
+
+.joinus {
+    background: rgb(247, 147, 30);
+    background: linear-gradient(90deg,
+            rgba(247, 147, 30, 1) 0%,
+            rgba(255, 0, 255, 1) 35%,
+            rgba(94, 0, 255, 1) 100%);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-left: 1.6rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.nlogo {
+    width: 10rem;
+    border-radius: 0;
+}
+
+/* First Section Styles */
+
+.first-section {
+    padding: 13vh 2.5rem;
+    background-color: #f5bc9f;
+    overflow: hidden;
+
+    @media only screen and (min-width: 889px) {
+        padding: 22vh 2rem;
+        background-color: #f5bc9f;
+    }
+}
+
+.fsheading {
+    font-family: "Archivo", sans-serif;
+    font-size: 3rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    background: -webkit-linear-gradient(rgba(247, 147, 30, 1) 0%,
+            rgba(255, 0, 255, 1) 35%,
+            rgba(94, 0, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media only screen and (min-width: 600px) {
+        font-size: 3.25rem;
+        line-height: 3.5rem;
+    }
+
+    @media only screen and (min-width: 889px) {
+        width: 70vw;
+        font-size: 3.25rem;
+        line-height: 5rem;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 5rem;
+        line-height: 7rem;
+        width: 64vw;
+    }
+}
+
+.fstagline {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: 600;
+
+    @media only screen and (min-width: 600px) {
+        font-size: 1.25rem;
+    }
+
+    @media only screen and (min-width: 889px) {
+        font-size: 1.5rem;
+        width: 75vw;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 2rem;
+        width: 60vw;
+    }
+
+}
+
+.fsbgs {
+    position: relative;
+}
+
+.topshape {
+    position: absolute;
+    width: 100vw;
+    height: 12vh;
+    margin-top: -5rem;
+    top: 0;
+    z-index: 1;
+
+}
+
+.bottomshape {
+    position: absolute;
+    width: 100vw;
+    height: 8vh;
+    bottom: 0;
+
+    @media only screen and (min-width: 889px) {
+
+        height: 12vh;
+
+    }
+}
+
+.fsboxes {
+    margin-top: 2rem;
+
+    @media only screen and (min-width: 889px) {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+.fsbox {
+    margin: 0.8rem;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1.6rem 2rem;
+    border-radius: 5px;
+
+
+
+
+
+}
+
+.fsbox p {
+    margin: 0;
+}
+
+.fsbheading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+
+.fsbtagline {
+    font-weight: 400;
+    font-size: 1.1.6rem;
+}
+
+
+
+
+@media only screen and (min-width: 889px) {
+
+    .bottomshape {
+        position: absolute;
+        width: 100vw;
+        height: 12vh;
+        bottom: 0;
+    }
+}
+
+.nav-link {
+    font-size: 1.5rem !important;
+}

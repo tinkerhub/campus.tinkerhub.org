@@ -1,4 +1,32 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+
+nav {
+  margin: 0.5rem 1rem;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.9rem;
+}
+
+.joinus {
+  background: rgb(247, 147, 30);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 147, 30, 1) 0%,
+    rgba(255, 0, 255, 1) 35%,
+    rgba(94, 0, 255, 1) 100%
+  );
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  margin-left: 1rem;
+  color: white;
+  font-weight: 800;
+}
+
+.nlogo {
+  width: 8rem;
 }

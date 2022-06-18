@@ -24,9 +24,75 @@ nav {
   border-radius: 5px;
   margin-left: 1rem;
   color: white;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .nlogo {
   width: 8rem;
+}
+
+/* First Section Styles */
+
+.first-section {
+  padding: 15vh 2rem;
+  background-color: #f5bc9f;
+}
+
+.fsheading {
+  font-family: "Archivo", sans-serif;
+  font-size: 2.1rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+}
+
+.fstagline {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fsbgs {
+  position: relative;
+}
+
+.topshape {
+  position: absolute;
+  width: 100vw;
+  height: 12vh;
+  top: 0;
+}
+
+.bottomshape {
+  position: absolute;
+  width: 100vw;
+  height: 12vh;
+  bottom: 0;
+}
+
+.fsboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fsbox {
+  margin: 0.5rem;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.fsbox p {
+  margin: 0;
+}
+
+.fsbheading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+.fsbtagline{
+  font-weight: 300;
+  font-size: 1.1rem;
 }

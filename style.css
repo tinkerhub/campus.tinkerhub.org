@@ -68,10 +68,11 @@ nav {
 }
 
 .fsboxes {
-  display: flex;
+  margin-top: 2rem;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .fsbox {
@@ -92,7 +93,62 @@ nav {
   font-family: "Raleway", sans-serif;
 }
 
-.fsbtagline{
-  font-weight: 300;
+.fsbtagline {
+  font-weight: 00;
   font-size: 1.1rem;
 }
+
+@media only screen and (min-width: 600px) {
+  .fsheading {
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+  }
+
+  .fstagline {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .fsboxes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media only screen and (min-width: 889px) {
+
+  .fsheading {
+    width: 70vw;
+    font-size: 3.25rem;
+    line-height: 5rem;
+  }
+
+  .fstagline {
+    font-size: 1.5rem;
+    width: 75vw;
+  }
+
+  .fsboxes {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .fsheading {
+    width: 40vw;
+    line-height: 4rem;
+  }
+
+  .fstagline {
+    font-size: 1.2rem;
+    width: 45vw;
+  }
+
+  .fsboxes {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+

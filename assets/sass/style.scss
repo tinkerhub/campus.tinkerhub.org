@@ -24,7 +24,7 @@ nav {
     font-weight: 700;
     font-size: 1.2rem;
 
-    @media only screen and (max-width: 660px) {
+    @media only screen and (max-width: $bp-992) {
         display: none;
     }
 }
@@ -49,8 +49,8 @@ nav {
 
 .fsheading {
     font-family: "Archivo", sans-serif;
-    font-size: 3rem;
-    line-height: 2.25rem;
+    font-size: 4rem;
+    line-height: 1;
     font-weight: 800;
     background: -webkit-linear-gradient(rgba(247, 147, 30, 1) 0%,
             rgba(255, 0, 255, 1) 35%,
@@ -71,9 +71,10 @@ nav {
     }
 
     @media only screen and (min-width: 1200px) {
-        font-size: 5rem;
+        font-size: 6.5rem;
         line-height: 7rem;
-        width: 64vw;
+        width: 48vw;
+        margin-bottom: 1rem;
     }
 }
 
@@ -81,6 +82,9 @@ nav {
     font-family: "Montserrat", sans-serif;
     color: white;
     font-weight: 600;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+
 
     @media only screen and (min-width: 600px) {
         font-size: 1.25rem;
@@ -92,8 +96,8 @@ nav {
     }
 
     @media only screen and (min-width: 1200px) {
-        font-size: 2rem;
-        width: 60vw;
+        font-size: 1.8rem;
+        width: 50vw;
     }
 
 }
@@ -104,52 +108,57 @@ nav {
 
 .topshape {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 12vh;
     margin-top: -5rem;
     top: 0;
     z-index: 1;
 
+
+
 }
 
 .bottomshape {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 8vh;
-    bottom: 0;
+    bottom: -2rem;
 
     @media only screen and (min-width: 889px) {
-
         height: 12vh;
-
     }
 }
 
 .fsboxes {
     margin-top: 2rem;
 
-    @media only screen and (min-width: 889px) {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-    }
+    // @media only screen and (min-width: 889px) {
+    //     display: grid;
+    //     grid-template-columns: 33% 33% 33%;
+    // }
 
-    @media only screen and (min-width: 768px) {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
+    // @media only screen and (min-width: 768px) {
+    //     display: grid;
+    //     grid-template-columns: 50% 50%;
+    // }
 
-    @media only screen and (min-width: 1200px) {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-    }
+    // @media only screen and (min-width: 1200px) {
+    //     display: grid;
+    //     grid-template-columns: 25% 25% 25% 25%;
+    // }
 }
 
 .fsbox {
     margin: 0.8rem;
     background-color: #ffffff;
     text-align: center;
-    padding: 1.6rem 2rem;
-    border-radius: 5px;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+        margin-bottom: 3rem;
+    }
+
 
 
 
@@ -174,17 +183,13 @@ nav {
 
 
 
-
-@media only screen and (min-width: 889px) {
-
-    .bottomshape {
-        position: absolute;
-        width: 100vw;
-        height: 12vh;
-        bottom: 0;
-    }
-}
-
 .nav-link {
     font-size: 1.5rem !important;
+}
+
+.second-section {
+    height: 100vh;
+    background: brown;
+    z-index: 2;
+    position: relative;
 }

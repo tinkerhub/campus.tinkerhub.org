@@ -3,7 +3,7 @@
 /*=================================================*/
 
 .navigation {
-  width: 100%;
+  max-width: 96vw;
   background-color: #fff !important;
   position: relative;
   -webkit-transition: all 0.4s;
@@ -47,6 +47,7 @@
       justify-content: flex-start;
     }
   }
+
   &__logo {
     cursor: pointer;
     position: relative;
@@ -55,7 +56,9 @@
     img {
       width: 13rem;
       border-radius: 0px;
+      transform: translateY(11px);
     }
+
     @media only screen and (max-width: $bp-992) {
       order: 0;
     }
@@ -69,6 +72,7 @@
     justify-content: center;
     // padding: 1rem 0;
     margin-left: auto;
+
     @media only screen and (max-width: $bp-992) {
       display: none;
       order: 2;
@@ -103,6 +107,7 @@
       // margin-top: 1.5rem;
       padding: 1rem 0;
       width: 100%;
+
       &:not(:last-child) {
         border-bottom: 1px solid rgba(#0467a8, 0.2);
       }
@@ -113,12 +118,13 @@
     font-size: 1.6rem;
     font-weight: 400;
     color: #727272;
+
     &:hover {
-      color: #0467a8;
+      color: rgba(94, 0, 255, 1);
     }
 
     &.active {
-      color: #0467a8;
+      color: rgba(94, 0, 255, 1);
       font-weight: 500;
     }
 
@@ -142,6 +148,7 @@
       display: inline-block;
       order: 1;
     }
+
     ul {
       position: absolute;
       top: -61%;
@@ -150,6 +157,7 @@
       width: 20px;
       height: 20px;
       cursor: pointer;
+
       li {
         list-style: none;
         width: 100%;
@@ -158,17 +166,21 @@
         position: absolute;
         left: 0;
         transform: translateY(-50%);
-        box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+        // box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
         transition: 0.9s;
+
         &:nth-of-type(1) {
           top: 25%;
         }
+
         &:nth-of-type(2) {
           top: 55%;
         }
+
         &:nth-of-type(3) {
           top: 85%;
         }
+
         &:last-child {
           width: 100%;
           height: auto;
@@ -179,6 +191,7 @@
           transition: 0.9s;
         }
       }
+
       &.active {
         z-index: 25;
 
@@ -187,11 +200,13 @@
             top: 50%;
             transform: translateY(-50%) rotate(45deg) rotateY(180deg);
           }
+
           &:nth-of-type(2) {
             // left: -300%;
             opacity: 0;
             scale: 0.1;
           }
+
           &:nth-of-type(3) {
             top: 50%;
             transform: translateY(-50%) rotate(-45deg) rotateY(180deg);
@@ -199,6 +214,7 @@
         }
       }
     }
+
     ul li:last-child::before,
     ul li:last-child::after {
       position: absolute;
@@ -209,6 +225,7 @@
     }
   }
 }
+
 .hidden {
   display: none;
   height: auto;
@@ -233,4 +250,3 @@
     display: block;
   }
 }
-

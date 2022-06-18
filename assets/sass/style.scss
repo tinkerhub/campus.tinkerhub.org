@@ -23,6 +23,10 @@ nav {
     color: white;
     font-weight: 700;
     font-size: 1.2rem;
+
+    @media only screen and (max-width: 660px) {
+        display: none;
+    }
 }
 
 .nlogo {
@@ -165,7 +169,7 @@ nav {
 
 .fsbtagline {
     font-weight: 400;
-    font-size: 1.1.6rem;
+    font-size: 1.6rem;
 }
 
 

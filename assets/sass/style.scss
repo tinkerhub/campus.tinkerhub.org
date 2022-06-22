@@ -193,3 +193,103 @@ nav {
     z-index: 2;
     position: relative;
 }
+
+/*=====================================================*/
+/*                   About                         */
+/*=====================================================*/
+
+.about {
+
+    &__row--2 {
+        @media only screen and (max-width: $bp-992) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__left-part {
+        padding: 6rem 3rem 3rem 0;
+        height: 100%;
+
+        &:nth-child(2) {
+            padding: 2rem 0rem 3rem 3rem;
+
+
+        }
+
+        @media only screen and (max-width: $bp-992) {
+            padding: 3rem 0rem 3rem 3rem;
+        }
+
+        &--page {
+            padding: 0rem 0rem 0rem 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            @media only screen and (max-width: $bp-992) {
+                padding: 3rem 1rem 0rem;
+            }
+        }
+    }
+
+    &__right-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        height: 100%;
+
+        @media only screen and (max-width: $bp-992) {
+            padding: 3rem 0rem 3rem 3rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 3rem 1rem 0rem 1rem;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__row2 {
+        .about__left-part {
+            padding: 0 0 2rem 0 !important;
+        }
+    }
+
+    &--2nd-img {
+        display: none;
+
+        @media only screen and (max-width: $bp-small) {
+            display: block;
+        }
+    }
+
+    &--1st-img {
+        display: block;
+
+        @media only screen and (max-width: $bp-small) {
+            display: none;
+        }
+    }
+}
+
+.about--page {
+    @media only screen and (max-width: $bp-992) {
+        margin-top: 4rem;
+    }
+}
+
+/*=================================================*/
+/*                 Section-padding                 */
+/*=================================================*/
+
+.section-padding {
+    padding: 8rem 0rem;
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 7rem 1rem;
+    }
+}

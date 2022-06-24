@@ -14,3 +14,35 @@ function mobileMenu() {
 
 openBtn.addEventListener("click", mobileMenu)
 overlay.addEventListener("click", mobileMenu)
+
+//// faq
+
+$(document).ready(function () {
+    $('.accordion .accordion__link').click(function () {
+        $(this).toggleClass('active');
+        $(this).next('.content').slideToggle(400);
+    });
+});
+
+// //////////////////
+//GALLERY
+$('.single-gallery-item .popup-btn').magnificPopup({
+    type: 'image',
+    gallery: {
+        enabled: true
+    }
+})
+
+
+///////////////////////////////////////
+// Navbar scroll
+
+$(window).on('scroll', function () {
+    if ($(window).scrollTop() > 200) {
+        $('#navbar').addClass('sticky')
+    } else {
+        $('#navbar').removeClass('sticky')
+
+    }
+
+});

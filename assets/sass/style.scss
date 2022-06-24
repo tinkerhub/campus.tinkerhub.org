@@ -253,9 +253,13 @@ nav {
         }
     }
 
-    &__row2 {
-        .about__left-part {
-            padding: 0 0 2rem 0 !important;
+    &__row--2 {
+        // .about__left-part {
+        //     padding: 0 0 2rem 0 !important;
+        // }
+
+        img {
+            width: 72% !important;
         }
     }
 
@@ -334,24 +338,24 @@ nav {
 
                 &:hover {
                     cursor: pointer;
-                    color: #03b5d2;
+                    color: rgba(94, 0, 255, 1);
 
                     &::after {
-                        border: 1px solid #03b5d2;
+                        border: 1px solid rgba(94, 0, 255, 1);
                         cursor: pointer;
-                        color: #03b5d2;
+                        color: rgba(94, 0, 255, 1);
                     }
                 }
 
                 &.active {
-                    color: #03b5d2;
-                    border-bottom: 1px solid #03b5d2;
+                    color: rgba(94, 0, 255, 1);
+                    border-bottom: 1px solid rgba(94, 0, 255, 1);
 
                     &::after {
                         font-family: 'Ionicons';
                         content: '\f209';
-                        color: #03b5d2;
-                        border: 1px solid #03b5d2;
+                        color: rgba(94, 0, 255, 1);
+                        border: 1px solid rgba(94, 0, 255, 1);
                     }
                 }
 
@@ -506,6 +510,9 @@ nav {
     &__btn {
         color: #82b440;
         font-size: 20px;
+        img{
+           width: 1rem;
+        }
     }
 
     // &__details {
